@@ -1,0 +1,69 @@
+
+.navBar__container{
+    border-bottom: 1px solid var(--clr_main);
+padding: 0px !important;
+position: fixed !important;
+width: 100% !important;
+z-index: 55555555 !important;
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navBar__links{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.navBar__brand{
+    height: 100%;
+    padding: 13px 10px;
+
+    margin: 0;
+    font-weight: 100;
+
+}
+.navBar__brand:hover{
+ color: var(--clr_secondary);
+
+}
+.navBar__brandLogo{
+    border-left:1px solid var(--clr_main) ;
+    border-right:1px solid var(--clr_main) ;
+}
+.navBar__links a{
+    border-left:1px solid var(--clr_main) ;
+    border-right:1px solid var(--clr_main) ;
+    padding: 20px !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
+}
+.navBar__links a:hover{
+    color: var(--clr_secondary);
+    background-color: rgba(241, 178, 178, 0.7);
+}
+.navBar__toggle {
+    transition: transform 0.3s ease; 
+  }
+  
+  .menuOpen {
+    transform: rotate(180deg); 
+  }
+
+@media (max-width: 768px) {
+
+    .navBar__links {
+        align-items: center;
+
+    }
+
+    .navBar__links a{
+     border: none;
+     width: 100%;
+     border-top:1px solid var(--clr_main) ;
+     text-align: center;
+     font-size: 32px;
+        padding: 100px 0;
+
+    }
+}

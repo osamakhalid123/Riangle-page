@@ -1,0 +1,40 @@
+.Stories__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap:5px;
+    margin-top: 60px;
+}
+.Stories__LoadMoreButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Stories__loadMoreBtn {
+    all: unset;
+    font-size: 52px;
+    line-height: 1.40;
+    text-align: center;
+    margin: 30px auto;
+    font-family: 'Magnita', serif;
+    border-bottom: 3px solid var(--clr_secondary);
+}
+.Stories__loadMoreBtn:active {
+    background: none !important;
+    color: var(--clr_secondary) !important;
+    border-bottom-color: var(--clr_secondary) !important;
+}
+
+.Stories__loadMoreBtn:hover {
+    background: none;
+    color: var(--clr_secondary);
+    border-bottom-color: var(--clr_secondary);
+}
+
+
+
+@media (max-width: 767px) {
+    .Stories__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
